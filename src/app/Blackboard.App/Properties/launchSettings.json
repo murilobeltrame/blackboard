@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "Blackboard.App": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7183",
+      "launchBrowser": false
+    }
+  }
+}
