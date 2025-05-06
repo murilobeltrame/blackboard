@@ -3,6 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{26929DE9-A7DB-46C5-ACD0-361AD0376AD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "app", "app", "{EFD75FAD-341E-4164-BC9E-E6E219E13A77}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackboard.Entities", "src\app\Blackboard.Entities\Blackboard.Entities.csproj", "{1FD3D226-51EB-45B4-B9D4-6444DC93BB4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackboard.IntegrationEvents", "src\app\Blackboard.IntegrationEvents\Blackboard.IntegrationEvents.csproj", "{F6452659-8A26-4FE0-98D5-2FE58D8BC661}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tools", "tools", "{C30685DF-D703-4E9C-A2F5-5F4F6DE9C83B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackboard.Data.Migrations", "src\tools\Blackboard.Data.Migrations\Blackboard.Data.Migrations.csproj", "{45474FAD-0437-4E98-8C66-F46133E9C799}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackboard.App", "src\app\Blackboard.App\Blackboard.App.csproj", "{B9DD4FC4-4496-456D-83B3-64F51F0E7EDC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blackboard.EventSimulator", "src\tools\Blackboard.EventSimulator\Blackboard.EventSimulator.csproj", "{CE683ED3-90BE-4036-BC04-CFCE8270391B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "env", "env", "{AE04E5C8-6007-4537-BB29-766BF0F0BAC3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +28,37 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1FD3D226-51EB-45B4-B9D4-6444DC93BB4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FD3D226-51EB-45B4-B9D4-6444DC93BB4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FD3D226-51EB-45B4-B9D4-6444DC93BB4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FD3D226-51EB-45B4-B9D4-6444DC93BB4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6452659-8A26-4FE0-98D5-2FE58D8BC661}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6452659-8A26-4FE0-98D5-2FE58D8BC661}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6452659-8A26-4FE0-98D5-2FE58D8BC661}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6452659-8A26-4FE0-98D5-2FE58D8BC661}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45474FAD-0437-4E98-8C66-F46133E9C799}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45474FAD-0437-4E98-8C66-F46133E9C799}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45474FAD-0437-4E98-8C66-F46133E9C799}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45474FAD-0437-4E98-8C66-F46133E9C799}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9DD4FC4-4496-456D-83B3-64F51F0E7EDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9DD4FC4-4496-456D-83B3-64F51F0E7EDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9DD4FC4-4496-456D-83B3-64F51F0E7EDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9DD4FC4-4496-456D-83B3-64F51F0E7EDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE683ED3-90BE-4036-BC04-CFCE8270391B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE683ED3-90BE-4036-BC04-CFCE8270391B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE683ED3-90BE-4036-BC04-CFCE8270391B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE683ED3-90BE-4036-BC04-CFCE8270391B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{EFD75FAD-341E-4164-BC9E-E6E219E13A77} = {26929DE9-A7DB-46C5-ACD0-361AD0376AD0}
+		{1FD3D226-51EB-45B4-B9D4-6444DC93BB4B} = {EFD75FAD-341E-4164-BC9E-E6E219E13A77}
+		{F6452659-8A26-4FE0-98D5-2FE58D8BC661} = {EFD75FAD-341E-4164-BC9E-E6E219E13A77}
+		{C30685DF-D703-4E9C-A2F5-5F4F6DE9C83B} = {26929DE9-A7DB-46C5-ACD0-361AD0376AD0}
+		{45474FAD-0437-4E98-8C66-F46133E9C799} = {C30685DF-D703-4E9C-A2F5-5F4F6DE9C83B}
+		{B9DD4FC4-4496-456D-83B3-64F51F0E7EDC} = {EFD75FAD-341E-4164-BC9E-E6E219E13A77}
+		{CE683ED3-90BE-4036-BC04-CFCE8270391B} = {C30685DF-D703-4E9C-A2F5-5F4F6DE9C83B}
+		{AE04E5C8-6007-4537-BB29-766BF0F0BAC3} = {26929DE9-A7DB-46C5-ACD0-361AD0376AD0}
 	EndGlobalSection
 EndGlobal
